@@ -1,8 +1,8 @@
 import 'package:flutter/cupertino.dart';
 
-class HomePage extends StatelessWidget {
+class MinePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return Text("home");
+    return Text("我的");
   }
 }

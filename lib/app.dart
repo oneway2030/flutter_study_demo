@@ -1,6 +1,10 @@
 import 'package:flutter/material.dart';
 
+import 'home/CommunityPage.dart';
 import 'home/HomePage.dart';
+import 'home/MinePage.dart';
+import 'home/MorePage.dart';
+import 'home/NotePage.dart';
 
 class App extends StatefulWidget {
   @override
@@ -25,9 +29,6 @@ class _HomeWidget extends State {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text("标题"),
-      ),
       bottomNavigationBar: _getBottomNavigation(),
       body: getHomeBodyWidget(),
     );
@@ -88,13 +89,13 @@ class _HomeWidget extends State {
         page = CommunityPage();
         break;
       case 2:
-        page = HomePage();
+        page = MorePage();
         break;
       case 3:
-        page = HomePage();
+        page = NotePage();
         break;
       case 4:
-        page = HomePage();
+        page = MinePage();
         break;
     }
     return page;
